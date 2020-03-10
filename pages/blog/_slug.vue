@@ -96,7 +96,7 @@
           lang: this.$i18n.locale,
         },
         meta: [
-          { name: "author", content: "Marina Aisa" },
+          { name: "author", content: "Clonbg" },
           { name: "description", property: "og:description", content: this.description, hid: "description" },
           { property: "og:title", content: this.pageTitle },
           { property: "og:image", content: this.ogImage },
