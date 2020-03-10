@@ -1,6 +1,6 @@
 ---
 name: 'disena-programa-skeletons-screens'
-trans: 'design-and-code-skeletons-screens'
+# trans: 'design-and-code-skeletons-screens'
 title: Diseña y programa responsive Skeleton Screens
 year: 1 Mayo 2019
 color: '#edece7'

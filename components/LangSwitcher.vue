@@ -1,24 +1,25 @@
 <template>
-  <select v-model="selected" @change="changeLocale()" class="lang-switcher">
+<div>
+
+</div>
+  <!-- <select v-model="selected" @change="changeLocale()" class="lang-switcher">
     <option :value="selected" selected>{{ $i18n.locale }}</option>
     <option v-for="locale in $i18n.locales" v-if="locale.code !== $i18n.locale" :key="locale.code" >
       {{ locale.code }}
     </option>
-  </select>
+  </select> -->
 </template>
 
 <script>
 export default {
   name: 'LangSwitcher',
-  data () {
-    return {
-      selected: ''
-    }
-  },
   methods: {
     changeLocale () { 
-      this.$router.push(this.switchLocalePath(this.selected));
+      this.$router.push('/es');
     } 
+  },
+  beforeCreate(){
+    this.$router.push('/es');
   }
 }
 </script>

@@ -4,7 +4,7 @@ title: Cómo funciona Vuex y cómo lo utilicé mal
 year: 23 Enero 2019
 color: '#edece7'
 isTextColorDark: true
-trans: 'vuex-what-is-when-use-it'
+# trans: 'vuex-what-is-when-use-it'
 id: 'vuex-what-when'
 description: |
   Conceptos básicos de Vuex, cómo empeoré la performance de mi web con ello y por qué.

@@ -3,7 +3,7 @@ name: 'blog-usando-vue-nuxt-markdown'
 title: Web con blog y portfolio usando Vue.js + Nuxt + Markdown
 year: 1 Enero 2019
 color: '#8e7964'
-trans: 'blog-using-vue-nuxt-markdown'
+# trans: 'blog-using-vue-nuxt-markdown'
 id: 'vue-nuxt-blog'
 description: |
   Cómo he creado mi nueva web con portfolio y blog en dos idiomas. Qué tecnología he utilizado y por qué.

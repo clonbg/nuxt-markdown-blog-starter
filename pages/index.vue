@@ -15,10 +15,12 @@
   export default {
     async asyncData ({app}) {
 
-      const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+      // const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+      const blogs = blogsEs
       
       async function asyncImport (blogName) {
-        const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
+        // const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
+        const wholeMD = await import(`~/contents/es/blog/${blogName}.md`)
         return wholeMD.attributes
       }
 
@@ -32,15 +34,16 @@
     
     components: { BlogSection },
 
-    transition: {
+    /* transition: {
       name: 'slide-fade'
-    },
+    }, */
 
     head () {
       return {
         title: this.$t('indexPageHead.title'),
         htmlAttrs: {
-          lang: this.$i18n.locale,
+          // lang: this.$i18n.locale,
+          lang: 'es'
         },
         script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
         meta: [

@@ -4,7 +4,7 @@ title: How Vuex works and how I used it wrong
 year: 23 January 2019
 color: '#edece7'
 isTextColorDark: true
-trans: 'vuex-que-es-cuando-utilizarlo'
+# trans: 'vuex-que-es-cuando-utilizarlo'
 id: 'vuex-what-when'
 description: |
   Vuex basics, how I make my website's performance worse using it and why

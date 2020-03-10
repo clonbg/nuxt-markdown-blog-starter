@@ -8,8 +8,9 @@ import mip from 'markdown-it-prism'
 
 function getPaths (lang, type) {
   let initial = lang
-  if (lang === 'en') { initial = '' }
-  return fs.readdirSync(path.resolve(__dirname, 'contents', `${lang}/${type}`))
+  if (lang === 'es') { initial = '' }
+  // return fs.readdirSync(path.resolve(__dirname, 'contents', `${lang}/${type}`))
+  return fs.readdirSync(path.resolve(__dirname, 'contents', `es/${type}`))
     .filter(filename => path.extname(filename) === '.md')
     .map(filename => `${initial}/${type}/${path.parse(filename).name}`)
 }
